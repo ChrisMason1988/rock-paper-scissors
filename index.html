@@ -3,12 +3,38 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Made with Thimble</title>
+    <title>Rock,Paper,Scissors</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div class = "container">
+      <div class="buttons player">
+        <img src = "images/Rock.png" alt = "rock" class = "button">
+        <img src = "images/Paper.png" alt = "paper" class = "button">
+        <img src = "images/Scissors.png" alt = "scissors" class = "button">
+        <div class="scorebox">
+          <span class = "playerScore"> 0 </span>
+          <br>
+          <span class="competitor">Player</span>
+        </div>
+      </div>
+      <div class="buttons computer">
+        <img src = "images/Rock.png" alt = "rock" class = "rock button">
+        <img src = "images/Paper.png" alt = "paper" class = "paper button">
+        <img src = "images/Scissors.png" alt = "scissors" class = "scissors button">
+        <div class="scorebox">
+          <span class = "computerScore"> 0 </span>
+          <br>
+          <span class="competitor">Computer</span>
+        </div>
+      </div>
+      <div class = "resultsBox">
+        <p class = "announceResults"><br></p>
+      </div>
+      <form><br>
+        <button type="reset" value="Reset" onclick="resetGame();">Reset</button>
+      </form>
+    </div>  
     <script src="script.js"></script>>
-    
-    
   </body>
 </html>
